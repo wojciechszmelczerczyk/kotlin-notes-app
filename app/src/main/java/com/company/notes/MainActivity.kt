@@ -1,4 +1,4 @@
-package com.example.helloworld
+package com.company.notes
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                     result: BiometricPrompt.AuthenticationResult) {
                     super.onAuthenticationSucceeded(result)
                     // navigate to notes list
-                    val intent = Intent(this@MainActivity, notesList::class.java)
+                    val intent = Intent(this@MainActivity, NotesList::class.java)
                     startActivity(intent)
                     Toast.makeText(applicationContext,
                         "Authentication succeeded!", Toast.LENGTH_SHORT)
@@ -54,9 +54,7 @@ class MainActivity : AppCompatActivity() {
             .setNegativeButtonText("Use account password")
             .build()
 
-//         Prompt appears when user clicks "Log in".
-//         Consider integrating with the keystore to unlock cryptographic operations,
-//         if needed by your app.
+
         val biometricLoginButton =
             findViewById<Button>(R.id.biometric_login)
         biometricLoginButton.setOnClickListener {

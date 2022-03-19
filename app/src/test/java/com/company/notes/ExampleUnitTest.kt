@@ -1,4 +1,4 @@
-package com.example.helloworld
+package com.company.notes
 
 import org.junit.Test
 

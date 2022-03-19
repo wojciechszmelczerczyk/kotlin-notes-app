@@ -1,10 +1,10 @@
-package com.example.helloworld
+package com.company.notes
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class notesList : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+class NotesList : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?)  {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_notes_list)
     }
