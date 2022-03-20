@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Notes App</string>
+    <string name="sss">sss</string>
+    <string name="login">Login</string>
+    <string name="notes">Notes</string>
 </resources>
