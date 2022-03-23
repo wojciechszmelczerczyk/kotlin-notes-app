@@ -33,4 +33,5 @@ Users can authorize via biometric authentication.
 
 ### User can check his notes (for now notes are arbitrary values).
 
+#### Scrollable vertical list.
 <img src="https://media.giphy.com/media/RwRw112otv4d0tGnN1/giphy.gif">
