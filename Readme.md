@@ -9,6 +9,7 @@ Users can authorize via biometric authentication.
 
 - [Techstack](#techstack)
 - [Authentication](#authentication)
+- [List notes](#list-notes)
 
 ## Techstack
 
@@ -24,6 +25,12 @@ Users can authorize via biometric authentication.
 
 <br />
 
-#### Otherwise prompt an error
+#### Otherwise prompt an error.
 
 <img src="https://media.giphy.com/media/sVQkxBfwfwoEsKUoCR/giphy.gif">
+
+## List notes
+
+### User can check his notes (for now notes are arbitrary values).
+
+<img src="https://media.giphy.com/media/RwRw112otv4d0tGnN1/giphy.gif">
