@@ -19,97 +19,117 @@
         />
 
     <ScrollView
-        android:layout_width="218dp"
-        android:layout_height="218dp"
-        android:layout_centerInParent="true">
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignParentBottom="true">
 
-        <LinearLayout
+        <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="600dp"
+            android:columnCount="2">
 
             <TextView
                 android:id="@+id/note1"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="5dp"
-                android:background="@color/app_color"
+                android:layout_width="1dp"
+                android:layout_height="138dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="5sp"
+                android:background="@drawable/round_corner"
                 android:text="Note 1"
+                android:textAlignment="center"
                 android:textColor="@color/white"
 
                 />
 
             <TextView
                 android:id="@+id/note2"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_centerVertical="true"
-                android:layout_marginTop="5dp"
-
-                android:background="@color/app_color"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:layout_margin="5sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@drawable/round_corner"
                 android:text="Note 2"
+                android:textAlignment="center"
                 android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/note3"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_alignParentBottom="true"
-                android:layout_marginTop="5dp"
-                android:background="@color/app_color"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:layout_margin="5sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@drawable/round_corner"
                 android:text="Note 3"
+                android:textAlignment="center"
                 android:textColor="@color/white" />
 
+
             <TextView
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="5dp"
-                android:background="@color/app_color"
+                android:id="@+id/note4"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:layout_margin="5sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@drawable/round_corner"
                 android:text="Note 4"
+                android:textAlignment="center"
                 android:textColor="@color/white" />
 
 
             <TextView
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginTop="5dp"
-                android:background="@color/app_color"
+                android:id="@+id/note5"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:layout_margin="5sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@drawable/round_corner"
                 android:text="Note 5"
+                android:textAlignment="center"
                 android:textColor="@color/white" />
 
             <TextView
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginTop="5dp"
-                android:background="@color/app_color"
+                android:id="@+id/note6"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:layout_margin="5sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@drawable/round_corner"
                 android:text="Note 6"
+                android:textAlignment="center"
                 android:textColor="@color/white" />
 
             <TextView
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_alignBottom="@id/note3"
-                android:layout_marginTop="5dp"
-                android:background="@color/app_color"
-
+                android:id="@+id/note7"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:layout_margin="5sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@drawable/round_corner"
                 android:text="Note 7"
+                android:textAlignment="center"
                 android:textColor="@color/white" />
 
             <TextView
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="5dp"
-                android:background="@color/app_color"
+                android:id="@+id/note8"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:layout_margin="5sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@drawable/round_corner"
                 android:text="Note 8"
+                android:textAlignment="center"
                 android:textColor="@color/white" />
 
 
-        </LinearLayout>
+        </GridLayout>
     </ScrollView>
 
 </RelativeLayout>

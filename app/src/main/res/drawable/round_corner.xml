@@ -2,7 +2,7 @@
     <stroke
         android:height="50dp"
         android:width="50dp"
-        android:color="#52B1E5" />
-    <solid android:color="#52B1E5" />
+        android:color="@color/app_color" />
+    <solid android:color="@color/app_color" />
     <corners android:radius="5dp" />
 </shape>
