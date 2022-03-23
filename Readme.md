@@ -21,7 +21,7 @@ Users can authorize via biometric authentication.
 
 #### When fingerprint credentials are correct login.
 
-<img src="https://media.giphy.com/media/mxeQWUG4qGAB3wWQ3f/giphy.gif">
+<img src="https://media.giphy.com/media/MhBoHxXyOrjJT7HlaI/giphy.gif">
 
 <br />
 
