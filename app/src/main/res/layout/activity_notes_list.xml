@@ -1,135 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
     tools:context=".NotesList">
-
-
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:text="Notes list"
-        android:textColor="@color/app_color"
-        />
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:layout_alignParentBottom="true">
-
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="600dp"
-            android:columnCount="2">
-
-            <TextView
-                android:id="@+id/note1"
-                android:layout_width="1dp"
-                android:layout_height="138dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="5sp"
-                android:background="@drawable/round_corner"
-                android:text="Note 1"
-                android:textAlignment="center"
-                android:textColor="@color/white"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
 
                 />
-
-            <TextView
-                android:id="@+id/note2"
-                android:layout_width="138dp"
-                android:layout_height="138dp"
-                android:layout_margin="5sp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:background="@drawable/round_corner"
-                android:text="Note 2"
-                android:textAlignment="center"
-                android:textColor="@color/white" />
-
-            <TextView
-                android:id="@+id/note3"
-                android:layout_width="138dp"
-                android:layout_height="138dp"
-                android:layout_margin="5sp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:background="@drawable/round_corner"
-                android:text="Note 3"
-                android:textAlignment="center"
-                android:textColor="@color/white" />
-
-
-            <TextView
-                android:id="@+id/note4"
-                android:layout_width="138dp"
-                android:layout_height="138dp"
-                android:layout_margin="5sp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:background="@drawable/round_corner"
-                android:text="Note 4"
-                android:textAlignment="center"
-                android:textColor="@color/white" />
-
-
-            <TextView
-                android:id="@+id/note5"
-                android:layout_width="138dp"
-                android:layout_height="138dp"
-                android:layout_margin="5sp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:background="@drawable/round_corner"
-                android:text="Note 5"
-                android:textAlignment="center"
-                android:textColor="@color/white" />
-
-            <TextView
-                android:id="@+id/note6"
-                android:layout_width="138dp"
-                android:layout_height="138dp"
-                android:layout_margin="5sp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:background="@drawable/round_corner"
-                android:text="Note 6"
-                android:textAlignment="center"
-                android:textColor="@color/white" />
-
-            <TextView
-                android:id="@+id/note7"
-                android:layout_width="138dp"
-                android:layout_height="138dp"
-                android:layout_margin="5sp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:background="@drawable/round_corner"
-                android:text="Note 7"
-                android:textAlignment="center"
-                android:textColor="@color/white" />
-
-            <TextView
-                android:id="@+id/note8"
-                android:layout_width="138dp"
-                android:layout_height="138dp"
-                android:layout_margin="5sp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:background="@drawable/round_corner"
-                android:text="Note 8"
-                android:textAlignment="center"
-                android:textColor="@color/white" />
-
-
-        </GridLayout>
-    </ScrollView>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
