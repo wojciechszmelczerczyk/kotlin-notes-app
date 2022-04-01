@@ -9,8 +9,6 @@ import java.util.*
 
 class RecyclerAdapter(private val noteList: ArrayList<Note>)  : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
-    private var notes: Array<String> = arrayOf("s","s","s","s","s","s","s","s")
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapter.ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.note_layout, parent, false)
         return ViewHolder(v)
