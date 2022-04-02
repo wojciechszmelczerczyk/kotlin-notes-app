@@ -18,6 +18,7 @@ class RecyclerAdapter(private val noteList: ArrayList<Note>)  : RecyclerView.Ada
         // populate note layouts with note title
         val currentItem = noteList[position]
         holder.noteTitle.text = currentItem.name
+        holder.noteContent.text = currentItem.content
     }
 
     override fun getItemCount(): Int {
@@ -26,5 +27,6 @@ class RecyclerAdapter(private val noteList: ArrayList<Note>)  : RecyclerView.Ada
 
     inner class ViewHolder(noteView: View): RecyclerView.ViewHolder(noteView){
         var noteTitle: TextView = itemView.findViewById(R.id.note_title)
+        var noteContent: TextView = itemView.findViewById(R.id.note_content)
     }
 }
