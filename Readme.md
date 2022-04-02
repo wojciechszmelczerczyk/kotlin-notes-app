@@ -31,7 +31,7 @@ Users can authorize via biometric authentication.
 
 ## List notes
 
-### User can check his notes (for now notes are arbitrary values).
+### User can check his notes.
 
 #### Scrollable vertical list.
 
