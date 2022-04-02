@@ -21,7 +21,7 @@ Users can authorize via biometric authentication.
 
 #### When fingerprint credentials are correct login.
 
-<img src="https://media.giphy.com/media/ErwkBYlsnB13AjFNp3/giphy.gif">
+<img src="https://media.giphy.com/media/ge6KOaPtGUZFY39gGz/giphy.gif">
 
 <br />
 
@@ -35,4 +35,4 @@ Users can authorize via biometric authentication.
 
 #### Scrollable vertical list.
 
-<img src="https://media.giphy.com/media/reR0NdOKUALXHjvLPJ/giphy.gif">
+<img src="https://media.giphy.com/media/ZsePXbzVrA5qG9tqKj/giphy.gif">
