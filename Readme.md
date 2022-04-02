@@ -21,7 +21,7 @@ Users can authorize via biometric authentication.
 
 #### When fingerprint credentials are correct login.
 
-<img src="https://media.giphy.com/media/ge6KOaPtGUZFY39gGz/giphy.gif">
+<img src="https://media.giphy.com/media/TVeYk0UI7HY5d5Uvk9/giphy.gif">
 
 <br />
 
@@ -33,6 +33,6 @@ Users can authorize via biometric authentication.
 
 ### User can check his notes.
 
-#### Scrollable vertical list.
+#### Scrollable list of notes.
 
-<img src="https://media.giphy.com/media/ZsePXbzVrA5qG9tqKj/giphy.gif">
+<img src="https://media.giphy.com/media/jDzswu8RxNYGdzJhD4/giphy.gif">
