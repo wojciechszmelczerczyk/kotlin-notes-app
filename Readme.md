@@ -10,6 +10,7 @@ Users can authorize via biometric authentication.
 - [Techstack](#techstack)
 - [Authentication](#authentication)
 - [List notes](#list-notes)
+- [Create note](#add-new-note)
 
 ## Techstack
 
@@ -21,7 +22,7 @@ Users can authorize via biometric authentication.
 
 #### When fingerprint credentials are correct login.
 
-<img src="https://media.giphy.com/media/TVeYk0UI7HY5d5Uvk9/giphy.gif">
+<img src="https://media.giphy.com/media/3xl32qbVuYx9B2ieKe/giphy.gif">
 
 <br />
 
@@ -35,4 +36,14 @@ Users can authorize via biometric authentication.
 
 #### Scrollable list of notes.
 
-<img src="https://media.giphy.com/media/jDzswu8RxNYGdzJhD4/giphy.gif">
+<img src="https://media.giphy.com/media/aifMxjI7hvmvLzI7CH/giphy.gif">
+
+## Add new note
+
+### User can create new note.
+
+<img src="https://media.giphy.com/media/dd6Oh0lrLnTdVWxA24/giphy.gif">
+
+### When data is not provided, prompt message.
+
+<img src="https://media.giphy.com/media/9m5bXFmpH05ce2VZB8/giphy.gif">
