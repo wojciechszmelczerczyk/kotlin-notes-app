@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWorld">
         <activity
-            android:name="com.company.notes.NotesList"
+            android:name=".NewNote"
             android:exported="false" />
         <activity
-            android:name="com.company.notes.MainActivity"
+            android:name=".NotesList"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

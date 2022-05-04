@@ -7,6 +7,9 @@
     android:background="@color/black"
     tools:context=".MainActivity">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
 
     <ImageView
         android:id="@+id/fingerprint_icon"

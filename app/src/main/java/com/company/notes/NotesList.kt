@@ -1,8 +1,11 @@
 package com.company.notes
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.DataSnapshot
@@ -20,6 +23,9 @@ class NotesList : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?)  {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_notes_list)
+
+        setSupportActionBar(findViewById(R.id.toolbar))
+
 
         noteRecyclerView = findViewById(R.id.noteList)
 
@@ -51,5 +57,22 @@ class NotesList : AppCompatActivity() {
             }
 
         })
+    }
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.example_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.new_note -> {
+                val intent = Intent(this@NotesList, NewNote::class.java)
+                startActivity(intent)
+                return true
+
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
