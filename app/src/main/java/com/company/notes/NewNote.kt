@@ -3,6 +3,7 @@ package com.company.notes
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -34,15 +35,30 @@ class NewNote : AppCompatActivity() {
             dbref = Firebase.database.getReference("notes")
 
             if(titleField.text.toString().isNotEmpty() && contentField.text.toString().isNotEmpty()){
-                val note = Note(titleField.text.toString(), contentField.text.toString())
-                dbref.child(uid!!).push().setValue(note)
+
+
+                // create new note, generate id
+                val key = dbref.child(uid!!).push().key
+
+                val note = Note(id=key, titleField.text.toString(), contentField.text.toString())
+
+                dbref.child(key!!).setValue(note)
+
                 val intent = Intent(this@NewNote, NotesList::class.java)
                 startActivity(intent)
             } else {
-                // prompt about empty fields
-                Toast.makeText(applicationContext,
-                    "Note title and content cannot be empty", Toast.LENGTH_SHORT)
-                    .show()
+
+                if(titleField.text.toString().isEmpty()){
+                    // prompt about empty fields
+                    Toast.makeText(applicationContext,
+                        "Note title cannot be empty", Toast.LENGTH_SHORT)
+                        .show()
+
+                } else if (contentField.text.toString().isEmpty()){
+                    Toast.makeText(applicationContext,
+                        "Note content cannot be empty", Toast.LENGTH_SHORT)
+                        .show()
+                }
 
             }
 

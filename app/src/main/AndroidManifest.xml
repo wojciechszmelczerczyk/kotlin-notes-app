@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWorld">
         <activity
+            android:name=".NoteDetails"
+            android:exported="false" />
+        <activity
             android:name=".NewNote"
             android:exported="false" />
         <activity

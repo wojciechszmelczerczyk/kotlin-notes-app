@@ -13,6 +13,7 @@
         <entry key="app/src/main/res/font/saira_stencil_one.xml" value="0.297593921485859" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_new_note.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_note_details.xml" value="0.30312099187687047" />
         <entry key="app/src/main/res/layout/activity_notes_list.xml" value="0.33" />
         <entry key="app/src/main/res/layout/note_layout.xml" value="0.1" />
         <entry key="app/src/main/res/layout/toolbar.xml" value="0.25" />
