@@ -22,13 +22,13 @@ Users can authorize via biometric authentication.
 
 #### When fingerprint credentials are correct login.
 
-<img src="https://media.giphy.com/media/3xl32qbVuYx9B2ieKe/giphy.gif">
+<img src="https://media.giphy.com/media/jlLroT2ZIWLKZ4EM7f/giphy.gif">
 
 <br />
 
 #### Otherwise prompt an error.
 
-<img src="https://media.giphy.com/media/sVQkxBfwfwoEsKUoCR/giphy.gif">
+<img src="https://media.giphy.com/media/PQlgtuL1LwdP4lM18v/giphy.gif">
 
 ## List notes
 
@@ -36,14 +36,16 @@ Users can authorize via biometric authentication.
 
 #### Scrollable list of notes.
 
-<img src="https://media.giphy.com/media/aifMxjI7hvmvLzI7CH/giphy.gif">
+<img src="https://media.giphy.com/media/7yI0E1QfRfVA7gZP1p/giphy.gif">
 
 ## Add new note
 
 ### User can create new note.
 
-<img src="https://media.giphy.com/media/dd6Oh0lrLnTdVWxA24/giphy.gif">
+<img src="https://media.giphy.com/media/fbe4ljkA0HtYmUebfH/giphy.gif">
 
-### When data is not provided, prompt message.
+## Edit new note
 
-<img src="https://media.giphy.com/media/9m5bXFmpH05ce2VZB8/giphy.gif">
+### User can edit existing note.
+
+<img src="https://media.giphy.com/media/Jyc7HNp4d7wMbrsSlS/giphy.gif">
