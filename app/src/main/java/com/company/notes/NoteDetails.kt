@@ -23,13 +23,13 @@ class NoteDetails : AppCompatActivity() {
 
         val mToolbar: androidx.appcompat.widget.Toolbar = findViewById(R.id.toolbar)
 
-//        mToolbar.setNavigationIcon(R.drawable.ic_baseline_arrow_back_24)
-
         setSupportActionBar(mToolbar)
 
         val titleField = findViewById<EditText>(R.id.edit_text_title_d)
         val contentField = findViewById<EditText>(R.id.edit_text_content_d)
         val tagField = findViewById<EditText>(R.id.edit_text_tag_d)
+
+        val editBtn = findViewById<Button>(R.id.edit_note_button)
 
         val bundle: Bundle? = intent.extras
         val id = bundle?.getString("docReference") ?: ""
@@ -61,7 +61,23 @@ class NoteDetails : AppCompatActivity() {
             }
 
         })
+
+        // update note details
+        editBtn.setOnClickListener{
+            val note = Note(id=id, titleField.text.toString(), contentField.text.toString(), tagField.text.toString())
+
+            Firebase.database.getReference("notes").child(id).setValue(note)
+
+            val intent = Intent(this@NoteDetails, NotesList::class.java)
+
+            startActivity(intent)
+        }
+
+
     }
+
+
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater = menuInflater
         inflater.inflate(R.menu.example_menu2, menu)
