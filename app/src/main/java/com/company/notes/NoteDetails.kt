@@ -49,6 +49,10 @@ class NoteDetails : AppCompatActivity() {
                     else if (noteSnapshot.key == "content"){
                         contentField.setText("${noteSnapshot.value}")
                     }
+
+                    else if(noteSnapshot.key == "tag"){
+                        tagField.setText("${noteSnapshot.value}")
+                    }
                 }
             }
 

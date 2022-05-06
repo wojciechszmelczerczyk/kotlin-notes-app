@@ -25,6 +25,7 @@ class RecyclerAdapter(private val noteList: ArrayList<Note>)  : RecyclerView.Ada
         holder.noteTitle.text = currentItem.name
         holder.noteContent.text = currentItem.content
         holder.noteId.text = currentItem.id
+        holder.noteTag.text = "#${currentItem.tag}"
 
     }
 
@@ -36,6 +37,7 @@ class RecyclerAdapter(private val noteList: ArrayList<Note>)  : RecyclerView.Ada
         var noteTitle: TextView = itemView.findViewById(R.id.note_title)
         var noteContent: TextView = itemView.findViewById(R.id.note_content)
         var noteId: TextView = itemView.findViewById(R.id.note_id)
+        var noteTag: TextView = itemView.findViewById(R.id.note_tag)
 
         init {
             noteView.setOnClickListener {

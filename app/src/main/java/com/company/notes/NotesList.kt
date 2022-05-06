@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.DataSnapshot
@@ -25,7 +26,6 @@ class NotesList : AppCompatActivity() {
 
         setSupportActionBar(findViewById(R.id.toolbar))
 
-
         noteRecyclerView = findViewById(R.id.noteList)
 
         noteRecyclerView.layoutManager= GridLayoutManager(this,2)
@@ -33,8 +33,8 @@ class NotesList : AppCompatActivity() {
         noteRecyclerView.setHasFixedSize(true)
 
         noteArrayList = arrayListOf<Note>()
-        getNoteData()
 
+        getNoteData()
 
     }
     private fun getNoteData(){

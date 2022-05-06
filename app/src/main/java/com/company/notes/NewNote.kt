@@ -43,7 +43,7 @@ class NewNote : AppCompatActivity() {
                 // create new note, generate id
                 val key = dbref.child(uid!!).push().key
 
-                val note = Note(id=key, titleField.text.toString(), contentField.text.toString())
+                val note = Note(id=key, titleField.text.toString(), contentField.text.toString(), tagField.text.toString())
 
                 dbref.child(key!!).setValue(note)
 
