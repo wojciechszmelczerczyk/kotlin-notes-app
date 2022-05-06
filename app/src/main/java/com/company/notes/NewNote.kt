@@ -3,10 +3,12 @@ package com.company.notes
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import android.widget.Toolbar
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
@@ -20,13 +22,14 @@ class NewNote : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_note)
 
+        setSupportActionBar(findViewById(R.id.toolbar))
+
         val uid = ""
 
         val titleField = findViewById<EditText>(R.id.edit_text_title)
         val contentField = findViewById<EditText>(R.id.edit_text_content)
         val tagField = findViewById<EditText>(R.id.edit_text_tag)
 
-        val backBtn = findViewById<Button>(R.id.back_button)
         val addBtn = findViewById<Button>(R.id.add_note_button)
 
         // add new note
@@ -59,16 +62,26 @@ class NewNote : AppCompatActivity() {
                         "Note content cannot be empty", Toast.LENGTH_SHORT)
                         .show()
                 }
+            }
+        }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.example_menu2, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.back -> {
+                val intent = Intent(this@NewNote, NotesList::class.java)
+                startActivity(intent)
+                return true
 
             }
-
         }
-
-        // go back to notes list
-        backBtn.setOnClickListener {
-            val intent = Intent(this@NewNote, NotesList::class.java)
-            startActivity(intent)
-        }
-
+        return super.onOptionsItemSelected(item)
     }
 }
