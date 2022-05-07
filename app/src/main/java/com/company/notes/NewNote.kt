@@ -37,7 +37,7 @@ class NewNote : AppCompatActivity() {
 
             dbref = Firebase.database.getReference("notes")
 
-            if(titleField.text.toString().isNotEmpty() && contentField.text.toString().isNotEmpty()){
+            if(titleField.text.toString().isNotEmpty() && contentField.text.toString().isNotEmpty() && tagField.text.toString().isNotEmpty()){
 
 
                 // create new note, generate id
@@ -49,6 +49,7 @@ class NewNote : AppCompatActivity() {
 
                 val intent = Intent(this@NewNote, NotesList::class.java)
                 startActivity(intent)
+                Toast.makeText(applicationContext, "New note ${note.name} created successfully", Toast.LENGTH_LONG).show()
             } else {
 
                 if(titleField.text.toString().isEmpty()){
@@ -60,6 +61,11 @@ class NewNote : AppCompatActivity() {
                 } else if (contentField.text.toString().isEmpty()){
                     Toast.makeText(applicationContext,
                         "Note content cannot be empty", Toast.LENGTH_SHORT)
+                        .show()
+
+                } else if (tagField.text.toString().isEmpty()){
+                    Toast.makeText(applicationContext,
+                        "Note tag cannot be empty", Toast.LENGTH_SHORT)
                         .show()
                 }
             }

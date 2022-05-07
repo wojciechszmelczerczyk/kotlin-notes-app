@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import android.widget.Toolbar
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -71,9 +72,9 @@ class NoteDetails : AppCompatActivity() {
             val intent = Intent(this@NoteDetails, NotesList::class.java)
 
             startActivity(intent)
+
+            Toast.makeText(applicationContext, "Note updated successfully", Toast.LENGTH_LONG).show()
         }
-
-
     }
 
 
