@@ -46,6 +46,7 @@ class NotesList : AppCompatActivity() {
         dbref.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 noteArrayList.clear()
+                tmpArrayList.clear()
                 if(snapshot.exists()){
                     for(noteSnapshot in snapshot.children){
                         val note = noteSnapshot.getValue(Note::class.java)
