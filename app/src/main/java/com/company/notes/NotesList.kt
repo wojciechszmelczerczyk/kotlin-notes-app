@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.SearchView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.DataSnapshot
@@ -18,6 +19,8 @@ class NotesList : AppCompatActivity() {
     private lateinit var dbref: DatabaseReference
     private lateinit var noteRecyclerView: RecyclerView
     private lateinit var noteArrayList: ArrayList<Note>
+    private lateinit var tmpArrayList: ArrayList<Note>
+
 
     override fun onCreate(savedInstanceState: Bundle?)  {
         super.onCreate(savedInstanceState)
@@ -32,6 +35,7 @@ class NotesList : AppCompatActivity() {
         noteRecyclerView.setHasFixedSize(true)
 
         noteArrayList = arrayListOf<Note>()
+        tmpArrayList = arrayListOf<Note>()
 
         getNoteData()
 
@@ -47,7 +51,9 @@ class NotesList : AppCompatActivity() {
                         val note = noteSnapshot.getValue(Note::class.java)
                          noteArrayList.add(note!!)
                     }
-                    noteRecyclerView.adapter = RecyclerAdapter(noteArrayList)
+                    tmpArrayList.addAll(noteArrayList)
+
+                    noteRecyclerView.adapter = RecyclerAdapter(tmpArrayList)
                 }
             }
 
@@ -59,7 +65,39 @@ class NotesList : AppCompatActivity() {
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater = menuInflater
+
         inflater.inflate(R.menu.example_menu, menu)
+
+        val search = menu?.findItem(R.id.search_note)
+
+        val searchView = search?.actionView as SearchView
+
+
+        searchView.setOnQueryTextListener(object: SearchView.OnQueryTextListener{
+            override fun onQueryTextSubmit(p0: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(p0: String?): Boolean {
+                tmpArrayList.clear()
+                val searchText = p0!!
+                if(searchText.isNotEmpty()){
+                    noteArrayList.forEach{
+                        if(it.tag.toString().contains(searchText)){
+                            tmpArrayList.add(it)
+                        }
+                    }
+                    noteRecyclerView.adapter!!.notifyDataSetChanged()
+                } else {
+                    tmpArrayList.clear()
+                    tmpArrayList.addAll(noteArrayList)
+                    noteRecyclerView.adapter!!.notifyDataSetChanged()
+                }
+                return false
+            }
+
+        })
+
         return super.onCreateOptionsMenu(menu)
     }
 

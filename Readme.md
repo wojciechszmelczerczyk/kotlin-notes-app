@@ -13,6 +13,7 @@ Users can authorize via biometric authentication.
 - [Create note](#add-new-note)
 - [Edit note](#edit-new-note)
 - [Delete note](#delete-note)
+- [Filter notes](#filter-notes-by-tag)
 
 ## Techstack
 
@@ -57,3 +58,9 @@ Users can authorize via biometric authentication.
 ### User can delete existing note by long click event.
 
 <img src="https://media.giphy.com/media/ONzxpGHdrVQAZQAQiX/giphy.gif">
+
+## Filter notes by tag
+
+### User can filter notes by tag.
+
+<img src="https://media.giphy.com/media/HVIN7djaHNrbUtgRn3/giphy.gif">
