@@ -3,9 +3,12 @@ package com.company.notes
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.ContextMenu
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.TextView
+import androidx.core.view.forEach
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.DataSnapshot
@@ -42,6 +45,7 @@ class NotesList : AppCompatActivity() {
 
         dbref.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
+                noteArrayList.clear()
                 if(snapshot.exists()){
                     for(noteSnapshot in snapshot.children){
                         val note = noteSnapshot.getValue(Note::class.java)

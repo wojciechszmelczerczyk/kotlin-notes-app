@@ -1,15 +1,13 @@
 package com.company.notes
 
-import android.content.Context
 import android.content.Intent
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import java.util.*
 
 class RecyclerAdapter(private val noteList: ArrayList<Note>)  : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
@@ -41,6 +39,7 @@ class RecyclerAdapter(private val noteList: ArrayList<Note>)  : RecyclerView.Ada
 
         init {
             noteView.setOnClickListener {
+
                 val intent = Intent(it.context, NoteDetails::class.java)
 
                 // get name of clicked view
@@ -48,10 +47,10 @@ class RecyclerAdapter(private val noteList: ArrayList<Note>)  : RecyclerView.Ada
 
                 // pass to new activity
                 it.context.startActivity(intent)
-
             }
+
             noteView.setOnLongClickListener {
-                Toast.makeText(itemView.context, "This is a long click", Toast.LENGTH_SHORT).show();
+                Firebase.database.getReference("notes").child(noteId.text as String).removeValue()
                 true
             }
         }
