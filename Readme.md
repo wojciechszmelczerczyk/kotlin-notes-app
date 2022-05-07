@@ -12,6 +12,7 @@ Users can authorize via biometric authentication.
 - [List notes](#list-notes)
 - [Create note](#add-new-note)
 - [Edit note](#edit-new-note)
+- [Delete note](#delete-note)
 
 ## Techstack
 
@@ -43,10 +44,16 @@ Users can authorize via biometric authentication.
 
 ### User can create new note.
 
-<img src="https://media.giphy.com/media/fbe4ljkA0HtYmUebfH/giphy.gif">
+<img src="https://media.giphy.com/media/vWcW7120EYleOl66dG/giphy.gif">
 
 ## Edit new note
 
 ### User can edit existing note.
 
-<img src="https://media.giphy.com/media/Jyc7HNp4d7wMbrsSlS/giphy.gif">
+<img src="https://media.giphy.com/media/Ee2VUI9MkZpP2SHoyA/giphy.gif">
+
+## Delete note
+
+### User can delete existing note by long click event.
+
+<img src="https://media.giphy.com/media/ONzxpGHdrVQAZQAQiX/giphy.gif">
