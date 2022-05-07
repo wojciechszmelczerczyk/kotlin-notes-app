@@ -11,6 +11,7 @@ Users can authorize via biometric authentication.
 - [Authentication](#authentication)
 - [List notes](#list-notes)
 - [Create note](#add-new-note)
+- [Edit note](#edit-new-note)
 
 ## Techstack
 
