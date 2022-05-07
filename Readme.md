@@ -18,6 +18,7 @@ Users can authorize via biometric authentication.
 ## Techstack
 
 - `Kotlin`
+- `Firebase`
 
 ## Authentication
 
