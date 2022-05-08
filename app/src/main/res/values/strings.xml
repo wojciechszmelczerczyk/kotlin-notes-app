@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">Notes App</string>
-    <string name="sss">sss</string>
     <string name="login">Login</string>
     <string name="notes">Notes</string>
+    <string name="note_info">Note information</string>
+    <string name="note_title">title</string>
+    <string name="note_content">content</string>
+    <string name="note_tag">tag</string>
+    <string name="note_search">search note</string>
+    <string name="note_new">new note</string>
+
+    <string name="button_add">add</string>
+    <string name="button_update">update</string>
+    <string name="create_note">Create note</string>
+
 </resources>
