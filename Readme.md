@@ -14,6 +14,7 @@ Users can authorize via biometric authentication.
 - [Edit note](#edit-new-note)
 - [Delete note](#delete-note)
 - [Filter notes](#filter-notes-by-tag)
+- [Internationalization](#internationalization)
 
 ## Techstack
 
@@ -65,3 +66,9 @@ Users can authorize via biometric authentication.
 ### User can filter notes by tag.
 
 <img src="https://media.giphy.com/media/HVIN7djaHNrbUtgRn3/giphy.gif">
+
+## Internationalization
+
+### User can change application language.
+
+<img src="https://media.giphy.com/media/rNUGAxG6qgszw4IJ8B/giphy.gif">

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Notatki aplikacja</string>
+    <string name="login">Zaloguj sie</string>
+    <string name="notes">Notki</string>
+    <string name="note_info">Informacje notatki</string>
+    <string name="note_title">tytul</string>
+    <string name="note_content">zawartosc</string>
+    <string name="note_tag">tag</string>
+    <string name="note_search">szukaj notatki</string>
+    <string name="note_new">nowa notatka</string>
+
+    <string name="button_add">dodaj</string>
+    <string name="button_update">aktualizuj</string>
+    <string name="create_note">Utworz notatke</string>
+
+</resources>
