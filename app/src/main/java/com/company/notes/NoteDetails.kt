@@ -8,7 +8,6 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import android.widget.Toolbar
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
@@ -81,7 +80,7 @@ class NoteDetails : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater = menuInflater
-        inflater.inflate(R.menu.example_menu2, menu)
+        inflater.inflate(R.menu.modify_note_menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
 

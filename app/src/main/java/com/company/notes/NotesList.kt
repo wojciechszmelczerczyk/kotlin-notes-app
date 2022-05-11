@@ -67,7 +67,7 @@ class NotesList : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater = menuInflater
 
-        inflater.inflate(R.menu.example_menu, menu)
+        inflater.inflate(R.menu.list_notes_menu, menu)
 
         val search = menu?.findItem(R.id.search_note)
 
